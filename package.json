@@ -1,22 +1,25 @@
 {
-  "name": "apple-music-presence",
-  "version": "0.1.0",
-  "private": true,
+  "name": "applemusicrpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . XcodeRPC --asar"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@types/node": "20.1.2",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "eslint": "8.40.0",
-    "eslint-config-next": "13.4.1",
-    "next": "13.4.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.4"
+    "applescript": "^1.0.0",
+    "axios": "^1.4.0",
+    "discord-rich-presence": "^0.0.8",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/discord-rich-presence": "^0.0.0",
+    "electron": "^24.3.0",
+    "typescript": "^5.0.4"
   }
 }
