@@ -1,9 +1,8 @@
-const discordRPC = require("discord-rpc") as any;
-
-const rpc = new discordRPC.Client({ transport: "ipc" });
-
+import dotenv from "dotenv";
+dotenv.config();
 import { extractSongData } from "./applescript";
-
+const discordRPC = require("discord-rpc") as any;
+const rpc = new discordRPC.Client({ transport: "ipc" });
 discordRPC.register(process.env.DISCORD_CLIENT_ID);
 
 type SongType = {
